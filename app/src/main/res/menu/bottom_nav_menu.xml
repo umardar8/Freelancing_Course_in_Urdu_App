@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/home_button"
+        android:id="@+id/home_button"/>
+    <item android:title="Previous Page"
+        android:icon="@drawable/back_button"
+        android:id="@+id/back_button"/>
+    <item android:title="Next Page"
+        android:icon="@drawable/next_button"
+        android:id="@+id/next_button"/>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="homeTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/smallPadding</item>
+        <item name="android:paddingBottom">@dimen/mediumPadding</item>
+        <item name="fontFamily">@font/roboto_condensed_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+    </style>
+    <style name="titleTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/roboto_condensed_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/mediumPadding</item>
+        <item name="android:paddingBottom">@dimen/mediumPadding</item>
+    </style>
+    <style name="paragraphStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/roboto_thin</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Article2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/accent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/titleTextStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/secondIconText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/background"
+            android:paddingTop="@dimen/mediumPadding"
+            android:paddingStart="@dimen/mediumPadding"
+            android:paddingEnd="@dimen/mediumPadding">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home2"
+                android:paddingBottom="@dimen/smallPadding"/>
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_Intro" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article2_heading1" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_Para1" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article2_heading2" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_Para2" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article2_heading3" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_Para3" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article2_heading4" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_Para4" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article2_heading5" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_Para5" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/conclusion" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article2_conclusion" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
