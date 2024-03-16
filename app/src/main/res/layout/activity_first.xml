@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/background"
     tools:context=".FirstActivity">
@@ -10,8 +11,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
+        android:gravity="end"
         android:layoutDirection="ltr"
+        android:paddingStart="@dimen/smallPadding"
         android:paddingEnd="@dimen/smallPadding"
         android:orientation="horizontal">
 
@@ -75,6 +77,16 @@
         <TextView
             style="@style/homeTextStyle"
             android:text="@string/thirdIconText" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            android:layout_margin="20dp"
+            android:background="@color/black"
+            android:padding="1dp"/>
 
     </LinearLayout>
 
