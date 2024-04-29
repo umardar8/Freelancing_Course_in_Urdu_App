@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name" translatable="false">Freelancing Course</string>
-    <string name="secondIconText">Freelancing Platforms</string>
-    <string name="thirdIconText">Learn More..</string>
-    <string name="firstIconText">What is Freelancing?</string>
+    <string name="bottomIcon1Text">Learn More..</string>
+    <string name="firstIconText">1. What is Freelancing?</string>
+    <string name="secondIconText">2. Freelancing Platforms</string>
+    <string name="thirdIconText">3. How to Start Freelancing</string>
+    <string name="fourthIconText">4. How to create Fiverr Account</string>
+    <string name="fifthIconText">5. Earn Money by Logo Design</string>
+    <string name="sixthIconText">6. Earn Money by Video Editing</string>
     <string name="firstIconDesc" translatable="false">An icon showing a person sitting on couch with laptop</string>
     <string name="secondIconDesc" translatable="false">An icon showing a person trying to figure out his path</string>
-    <string name="thirdIconDesc" translatable="false">A light bulb on top of some books</string>
+    <string name="thirdIconDesc" translatable="false">a person with laptop</string>
+    <string name="fourthIconDesc" translatable="false">a person trying to create account on fiverr</string>
+    <string name="fifthIconDesc" translatable="false">a person designing logo on computer</string>
+    <string name="sixthIconDesc" translatable="false">a person editing videos on computer</string>
+    <string name="bottomIcon1Desc" translatable="false">A light bulb on top of some books</string>
     <string name="Article1_Intro">Freelancing means earning money online with help of your skills. Freelancing has become a popular career choice in Pakistan over the past few years. With the rise of online platforms and the increasing demand for remote work, freelancing has opened up new opportunities for professionals in Pakistan. If you are looking to start freelancing in Pakistan, there are a few things you need to know. In this article, we will guide you through the process of starting your freelancing career in Pakistan and provide you with some tips to help you succeed.</string>
     <string name="Article1_heading1">1. Choose your Niche:</string>
     <string name="Article1_Para1">The first step to becoming a successful freelancer is to choose your niche. A niche is a specific area of expertise in which you specialize. You need to determine what you are good at and what services you can offer to clients. In Pakistan, popular freelancing niches include graphic design, web development, content writing, digital marketing, and data entry.</string>
@@ -35,5 +43,21 @@
     <string name="Article2_heading5" translatable="false">5. PeoplePerHour</string>
     <string name="Article2_Para5">PeoplePerHour is a UK-based freelancing platform with a significant presence in Pakistan. The platform offers several job categories including web development, graphic design, and content writing. Freelancers on PeoplePerHour create a profile and can apply to projects posted by clients, or clients can invite freelancers to submit proposals. PeoplePerHour charges a 20 service fee on all transactions up to £175, with a lower fee for higher value projects.</string>
     <string name="Article2_conclusion">Whether you are a freelancer looking for work or an employer looking for talent, there are many freelancing platforms available in Pakistan to choose from. Each platform offers its own unique set of features and benefits, so it\'s important to choose the one that best suits your needs. When choosing a freelancing platform, it is important to consider factors such as the types of jobs available, the size of the platform\'s user base, the platform\'s fee structure, and the quality of support and resources available to freelancers. It\'s also important to remember that freelancing is a competitive field, and success requires a combination of talent, hard work, and dedication. Whether you\'re a seasoned freelancer or just starting out, it\'s important to constantly improve your skills and market yourself effectively to stand out from the competition. By choosing the right freelancing platform and constantly improving your skills, you can succeed as a freelancer and take advantage of the many opportunities available in Pakistan\'s growing digital economy.</string>
-    <string name="secondArticleTitle">Freelancing Platforms</string>
+    <string name="switch_en" translatable="false">English</string>
+    <string name="switch_ur" translatable="false">اردو</string>
+    <string name="Article3_Intro">Freelancing is very simple just you need one laptop, an internet connection, and a personal mobile. You can easily start freelancing in Pakistan. This question is very popular on search engines how to start freelancing you may also find many videos on this topic. You just need hard work and learning skills to make the best out of freelancing. To understand this topic better I have mentioned below the top 10 skills for freelancing. These skills are high-paid and trending on the top freelancing platforms including Fiverr, Upwork, Guru, etc.</string>
+    <string name="Article3_heading1">Top 10 Skills For Freelancing</string>
+    <string name="Article3_Para1">These are top 10 skills for starting freelancing while staying at home without any investmnet. You just have to create account on best freelancing platforms, we receomend for beginners to start with Fiverr.</string>
+    <string name="Article3_Para2">So let’s start… step by step, beginners to advanced level guide. Learning Freelancing in very easy steps.</string>
+    <string name="Article3_heading2">First Step: Follow the best Youtube Channels for learning skills for FREE</string>
+    <string name="Article3_Para3">As we said earlier, there are many channels on youtube that teach skills for free, you do not need to buy any courses or pay a single penny to anyone. This is the first step toward your freelancing journey. There are many youtubers such as Amir Iqbal, Hisham Sarwar, Enablers, and our own Youtube channel Geeky Academy. You can get Fiverr Tutorial from beginners to advanced level on our channel all step-by-step for free.</string>
+    <string name="Article3_heading3">Second Step: Explore the Freelancing Skills thats best for You!</string>
+    <string name="Article3_Para4">The biggest mistake that most of the new freelancers make is that they just follow the trend, they see whatever is hot-topic right now they start following it, just as it is the case with Amazon, Ecommerce, Drop Shipping etc. No doubt that Amazon and all these online businesses are really great, they are life-changing but not everything is for everyone.</string>
+    <string name="Article3_Para5">Do you think we could have gotten great players like Messi, Ronaldo or World Record Runner like Usain Bolt if those guys had not explored different things? Had they stayed stuck at school or had they never thought that I am good at football or I want to be the fastest runner, we would have lost such diamonds.</string>
+    <string name="Article3_Para6">Therfore, it is very important to explore different skills before you make up your mind about which skill suits you which type of freelancing excites you. Be it Ecommerce, Digital Marketing, Content Writing, Search Engine Optimization, or Web Development. The key takeaway is to explore these skills, take short free courses such as from DigiSkills or watch Youtube videos.</string>
+    <string name="Article3_heading4">Third Step: Start Doing! (Doers are Succeeders)</string>
+    <string name="Article3_Para7">After you have finally found what you are good at or what freelancing skill suits you, You must start practicing it and make up your mind that YOU HAVE TO DO IT! You have to master that one skill and that is the secret to succeed. Start Building your portfolio, do some free projects or charge minimum free in the beginning so that you can start creating your portfolio. After putting a decent amount of work you will soon have something to show to your future clients.</string>
+    <string name="Article3_Para8">Now, you can fill up your profiles on Fiverr, Upwork or any Freelancing platform with this portfolio of work you have done. It will definitely give you a big advantage over the people who start fresh and do not have anything in their freelancer profile to show as portfolio. This is one secret that leads to getting your first order on these freelancing platforms. Good Luck!</string>
+    <string name="Article3_conclusion">Starting freelancing is not as difficult as it seem, it takes only three steps: Watch, Learn, Do it!. All you have to do it learn skills for free from Youtube and other resouces, then put those skills to practice by working on free projects or with minimum price, then when you have a decent portfolio built up, start providing your services on the giant freelancing platforms. Don\'t Forget to subscribe our channel on Youtube as Geeky Academy and leave a good review for this app on PlayStore.</string>
+    <string name="coming_soon">More Lessons Coming Soon in Next Update, Stay Tuned..</string>
 </resources>

@@ -13,15 +13,14 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:layoutDirection="ltr"
-        android:paddingStart="@dimen/smallPadding"
-        android:paddingEnd="@dimen/smallPadding"
+        android:padding="@dimen/smallPadding"
         android:orientation="horizontal">
 
         <TextView
             android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="English"/>
+            android:text="@string/switch_en"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switch1"
@@ -32,62 +31,137 @@
             android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="اردو"/>
+            android:text="@string/switch_ur"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:gravity="center"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="0.92"
+        android:scrollbars="vertical">
 
-        <ImageView
-            android:id="@+id/home1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/firstIconDesc"
+        <LinearLayout
             android:gravity="center"
-            android:src="@drawable/home1" />
-
-        <TextView
-            style="@style/homeTextStyle"
-            android:text="@string/firstIconText" />
-
-        <ImageView
-            android:id="@+id/home2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/secondIconDesc"
-            android:gravity="center"
-            android:src="@drawable/home2" />
-
-        <TextView
-            style="@style/homeTextStyle"
-            android:text="@string/secondIconText" />
-
-        <ImageView
-            android:id="@+id/home3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/thirdIconDesc"
-            android:gravity="center"
-            android:src="@drawable/home3" />
-
-        <TextView
-            style="@style/homeTextStyle"
-            android:text="@string/thirdIconText" />
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-5838182687945471/6889251449"
-            android:layout_margin="20dp"
-            android:background="@color/black"
-            android:padding="1dp"/>
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/home1"
+                style="@style/homeTextStyle"
+                android:text="@string/firstIconText"
+                ads:drawableTopCompat="@drawable/home1" />
+
+            <ImageView
+                android:id="@+id/home2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/secondIconDesc"
+                android:gravity="center"
+                android:src="@drawable/home2" />
+
+            <TextView
+                style="@style/homeTextStyle"
+                android:text="@string/secondIconText" />
+
+            <ImageView
+                android:id="@+id/home3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/thirdIconDesc"
+                android:gravity="center"
+                android:src="@drawable/home3" />
+
+            <TextView
+                style="@style/homeTextStyle"
+                android:text="@string/thirdIconText" />
+
+            <ImageView
+                android:id="@+id/home4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fourthIconDesc"
+                android:gravity="center"
+                android:src="@drawable/home4" />
+
+            <TextView
+                style="@style/homeTextStyle"
+                android:text="@string/fourthIconText" />
+
+            <ImageView
+                android:id="@+id/home5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fifthIconDesc"
+                android:gravity="center"
+                android:src="@drawable/home5" />
+
+            <TextView
+                style="@style/homeTextStyle"
+                android:text="@string/fifthIconText" />
+
+            <ImageView
+                android:id="@+id/home6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/sixthIconDesc"
+                android:gravity="center"
+                android:src="@drawable/home6" />
+
+            <TextView
+                style="@style/homeTextStyle"
+                android:text="@string/sixthIconText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/accent"
+                android:layout_marginVertical="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Support Us for more FREE Content!"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/white" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bottom1"
+                        style="@style/homeTextStyle"
+                        android:text="@string/bottomIcon1Text"
+                        ads:drawableTopCompat="@drawable/bottom1" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5838182687945471/6889251449"
+        android:layout_margin="20dp"
+        android:padding="1dp"/>
+    <!-- Sample Banner AdUnit ID: ca-app-pub-3940256099942544/9214589741 -->
+    <!-- Production Banner AdUnit ID: ca-app-pub-5838182687945471/6889251449 -->
 
 </LinearLayout>

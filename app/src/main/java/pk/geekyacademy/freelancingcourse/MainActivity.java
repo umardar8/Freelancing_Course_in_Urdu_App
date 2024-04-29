@@ -20,9 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         Intent intent1 = new Intent(this, FirstActivity.class);
         Intent intent2 = getIntent();
-        int value = intent2.getIntExtra("number", 1);
 
-        number = value;
+        number = intent2.getIntExtra("number", 1);
         changeFragment(number);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     number -= 1;
                 }
             } else if (item.getItemId() == R.id.next_button) {
-                if (number < 2) {
+                if (number < 6) {
                     number += 1;
                 }
             } else {
@@ -53,8 +52,16 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         if (num == 1){
             fragmentTransaction.replace(R.id.frameLayout,new Article1Fragment());
-        } else {
+        } else if (num == 2) {
             fragmentTransaction.replace(R.id.frameLayout,new Article2Fragment());
+        } else if (num == 3) {
+            fragmentTransaction.replace(R.id.frameLayout,new Article3Fragment());
+        } else if (num == 4) {
+            fragmentTransaction.replace(R.id.frameLayout,new Article4Fragment());
+        } else if (num == 5) {
+            fragmentTransaction.replace(R.id.frameLayout,new Article5Fragment());
+        } else {
+            fragmentTransaction.replace(R.id.frameLayout,new Article6Fragment());
         }
 
         fragmentTransaction.commit();

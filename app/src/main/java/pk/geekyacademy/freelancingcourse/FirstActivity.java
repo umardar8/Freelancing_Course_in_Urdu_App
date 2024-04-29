@@ -3,6 +3,7 @@ package pk.geekyacademy.freelancingcourse;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -17,7 +18,13 @@ import pk.geekyacademy.freelancingcourse.databinding.ActivityFirstBinding;
 public class FirstActivity extends AppCompatActivity {
 
     ActivityFirstBinding binding;
-    ImageView home1, home2, home3;
+    TextView home1;
+    ImageView home2;
+    ImageView home3;
+    ImageView home4;
+    ImageView home5;
+    ImageView home6;
+    TextView bottom1;
 
     SwitchCompat Switch;
 
@@ -34,6 +41,10 @@ public class FirstActivity extends AppCompatActivity {
         home1 = binding.home1;
         home2 = binding.home2;
         home3 = binding.home3;
+        home4 = binding.home4;
+        home5 = binding.home5;
+        home6 = binding.home6;
+        bottom1 = binding.bottom1;
         Switch = binding.switch1;
 
         Switch.setOnClickListener(view -> {
@@ -59,6 +70,30 @@ public class FirstActivity extends AppCompatActivity {
         });
 
         home3.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("number", 3);
+            startActivity(intent);
+        });
+
+        home4.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("number", 4);
+            startActivity(intent);
+        });
+
+        home5.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("number", 5);
+            startActivity(intent);
+        });
+
+        home6.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("number", 6);
+            startActivity(intent);
+        });
+
+        bottom1.setOnClickListener(view -> {
             Intent intent = new Intent(this, WebviewActivity.class);
             startActivity(intent);
         });
