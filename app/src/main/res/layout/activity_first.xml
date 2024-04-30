@@ -115,18 +115,9 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="@color/accent"
+                android:layout_height="1dp"
+                android:background="@color/black"
                 android:layout_marginVertical="10dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Support Us for more FREE Content!"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                android:textSize="@dimen/normalTextSize"
-                android:textColor="@color/white" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -139,18 +130,44 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
+                    <ImageView
                         android:id="@+id/bottom1"
-                        style="@style/homeTextStyle"
-                        android:text="@string/bottomIcon1Text"
-                        ads:drawableTopCompat="@drawable/bottom1" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bottom1"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:id="@+id/bottom2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bottom2"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"/>
 
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/support"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/white" />
+
         </LinearLayout>
 
     </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -158,7 +175,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.08"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-5838182687945471/6889251449"
+        ads:adUnitId="@string/banner_adUnit"
         android:layout_margin="20dp"
         android:padding="1dp"/>
     <!-- Sample Banner AdUnit ID: ca-app-pub-3940256099942544/9214589741 -->

@@ -1,18 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
     tools:context=".Article4Fragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/coming_soon"
-        android:textStyle="bold|italic"
-        android:paddingHorizontal="20dp"
-        android:textSize="26sp"
-        android:textColor="@color/white"/>
+        android:background="@color/accent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            style="@style/titleTextStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/fourthIconText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/background"
+            android:paddingStart="@dimen/mediumPadding"
+            android:paddingEnd="@dimen/mediumPadding"
+            android:paddingTop="@dimen/mediumPadding"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home4"
+                android:contentDescription="@string/fourthIconDesc"
+                android:paddingBottom="@dimen/smallPadding"/>
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_Intro" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article4_heading1" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para1" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article4_heading2" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para2" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article4_heading3" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para3" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_adUnit"
+                android:layout_marginVertical="20dp" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article4_heading4" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para4" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article4_heading5" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para5" />
+
+            <TextView
+                style="@style/titleTextStyle"
+                android:layout_width="match_parent"
+                android:text="@string/Article4_heading6" />
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para6"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                style="@style/paragraphStyle"
+                android:text="@string/Article4_para7" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_adUnit"
+                android:layout_marginVertical="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

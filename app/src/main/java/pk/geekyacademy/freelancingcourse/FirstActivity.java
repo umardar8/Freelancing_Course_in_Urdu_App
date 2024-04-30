@@ -1,6 +1,7 @@
 package pk.geekyacademy.freelancingcourse;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,7 +25,8 @@ public class FirstActivity extends AppCompatActivity {
     ImageView home4;
     ImageView home5;
     ImageView home6;
-    TextView bottom1;
+    ImageView bottom1;
+    ImageView bottom2;
 
     SwitchCompat Switch;
 
@@ -45,6 +47,7 @@ public class FirstActivity extends AppCompatActivity {
         home5 = binding.home5;
         home6 = binding.home6;
         bottom1 = binding.bottom1;
+        bottom2 = binding.bottom2;
         Switch = binding.switch1;
 
         Switch.setOnClickListener(view -> {
@@ -95,6 +98,11 @@ public class FirstActivity extends AppCompatActivity {
 
         bottom1.setOnClickListener(view -> {
             Intent intent = new Intent(this, WebviewActivity.class);
+            startActivity(intent);
+        });
+
+        bottom2.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/@GeekyAcademyOfficial"));
             startActivity(intent);
         });
 
